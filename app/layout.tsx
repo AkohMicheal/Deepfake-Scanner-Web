@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Footer from "@/components/Footer"; // Adjust path based on your folder structure
 import "./globals.css";
 
@@ -80,6 +81,7 @@ export default function RootLayout({
 
         {/* Globally Integrated Sticky Footer */}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
